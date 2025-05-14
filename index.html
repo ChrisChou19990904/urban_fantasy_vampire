@@ -1,10 +1,878 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
+<style>
+    .content {
+        padding: 20px;
+        margin: 20px;
+    }
+    ul {
+        list-style-type: square;
+    }
+</style>
 <body>
-$END$
+
+    <p>鑑於許多以吸血鬼為題材的電視劇、電影、小說、漫畫像是《嗜血真愛》、《刀鋒戰士》、《夜訪吸血鬼》、《嗜血Y世代》、《創始吸血鬼》、《暮光之城》、《向達倫大冒險》、《吸血鬼獵人：林肯總統》、《血世紀》、《吸血鬼學院》、《凡赫辛》、《獵魔教士》、《決戰異世界》、《尖叫旅社》、《我們是夜晚》、《吸血萊恩》、《吸血鬼姐妹》、《精靈小王子》、《我和殭屍有個約會》、《僵》、《還來得及再愛你》、《獵命師傳奇》、《你好，吸血鬼先生》、《你好，吸血鬼小姐》、《血戰：最後的吸血鬼》、《彼岸島》、《吸血鬼獵人D》、《厄夜怪客》、《吸血鬼騎士》、《惡魔城》、《JoJo的奇妙冒險》、《聖魔之血》、《嗜血狂襲》、《吸血鬼醫生》、《橘皮馬末蘭果醬》、《夜行書生》、《大貴族》等非常受歡迎，我要設計一款吸血鬼為主角、背景年代為現代、可以在第一人稱視角與第三人稱視角之間來回切換、背景地點為拉斯維加斯、角色全程用美式英語溝通的開放世界。</p>
+
+    <h2>吸血鬼的能力和背景設定：</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+        <tr>
+            <th>類別</th>
+            <th>吸血鬼特性說明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>起源與本質</td>
+            <td>被X病毒感染後基因突變，為科幻設定中的生物，非魔法生物。</td>
+        </tr>
+        <tr>
+            <td>外觀與族群</td>
+            <td>外觀與人類無異，分布於全球所有人種。</td>
+        </tr>
+        <tr>
+            <td>基本生理</td>
+            <td>不老不死，無法生育（包括與人類或吸血鬼交配）。</td>
+        </tr>
+        <tr>
+            <td>吸血需求</td>
+            <td>以血為生，不吃普通食物；不吸血會疲勞，吸血時會長出獠牙。</td>
+        </tr>
+        <tr>
+            <td>眼珠顏色變化</td>
+            <td>
+                飢餓時：紫色<br>
+                吸血後：鮮紅（30秒）<br>
+                正常：依原人種而定
+            </td>
+        </tr>
+        <tr>
+            <td>五感與體能</td>
+            <td>力量、速度、跳躍力、耐力、肺活量等全面超人類。</td>
+        </tr>
+        <tr>
+            <td>抗打能力</td>
+            <td>皮膚如花崗岩，對冷兵器和撞擊免疫，但體重比常人重約8公斤。</td>
+        </tr>
+        <tr>
+            <td>復原能力</td>
+            <td>可快速癒合，斷肢可接回。</td>
+        </tr>
+        <tr>
+            <td>壽命與睡眠</td>
+            <td>長生不老，但需靠睡眠恢復腦力。</td>
+        </tr>
+        <tr>
+            <td>體溫與環境反應</td>
+            <td>體溫約26°C，怕熱不怕冷，不會感冒。</td>
+        </tr>
+        <tr>
+            <td>弱點</td>
+            <td>怕紫外線和銀，會灼傷且癒合緩慢。</td>
+        </tr>
+        <tr>
+            <td>水的效果</td>
+            <td>水中可阻隔紫外線；泡溫水可加速灼傷癒合。</td>
+        </tr>
+        <tr>
+            <td>日夜與時間</td>
+            <td>遊戲中時間與季節與現實同步。</td>
+        </tr>
+        <tr>
+            <td>感染與轉化</td>
+            <td>通過咬人注射病毒感染人類轉化為吸血鬼。</td>
+        </tr>
+        <tr>
+            <td>日常行為</td>
+            <td>不流汗、不吃普通食物、不上廁所、女性無生理期。</td>
+        </tr>
+        <tr>
+            <td>性與情感</td>
+            <td>有性慾與戀愛需求，提供角色心理滿足感。</td>
+        </tr>
+        <tr>
+            <td>信仰與鏡像</td>
+            <td>不怕十字架、聖水，可自由進出教堂，能照鏡子。</td>
+        </tr>
+        <tr>
+            <td>飛行能力</td>
+            <td>無法飛行，依靠地面行動。</td>
+        </tr>
+        <tr>
+            <td>特殊能力</td>
+            <td>部分吸血鬼有專屬超能力，但非人人皆有。</td>
+        </tr>
+        <tr>
+            <td>半吸血鬼設定</td>
+            <td>無半吸血鬼，轉化後即無繁殖能力。</td>
+        </tr>
+        </tbody>
+    </table>
+<br>
+    <!-- 女性吸血鬼 -->
+    <h2>女性吸血鬼數據：</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+        <tr>
+            <th>項目</th>
+            <th>數據</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>身高範圍</td>
+            <td>160cm – 180cm</td>
+        </tr>
+        <tr>
+            <td>彈跳力</td>
+            <td>最高30公尺（背人減半為15公尺；抬重物無法跳躍）</td>
+        </tr>
+        <tr>
+            <td>奔跑速度</td>
+            <td>最高時速300公里（背人減半為150公里；抬重物無法奔跑）</td>
+        </tr>
+        <tr>
+            <td>單手力量</td>
+            <td>500公斤</td>
+        </tr>
+        <tr>
+            <td>雙手負重</td>
+            <td>可抬起小型車</td>
+        </tr>
+        <tr>
+            <td>握力</td>
+            <td>225公斤</td>
+        </tr>
+        <tr>
+            <td>游泳速度</td>
+            <td>每小時120公里</td>
+        </tr>
+        <tr>
+            <td>人種</td>
+            <td>白人、黑人、黃種人</td>
+        </tr>
+        <tr>
+            <td>身材特徵</td>
+            <td>火爆身材，無胖子</td>
+        </tr>
+        </tbody>
+    </table>
+<br>
+    <!-- 男性吸血鬼 -->
+    <h2>男性吸血鬼數據：</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+        <tr>
+            <th>項目</th>
+            <th>數據</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>身高範圍</td>
+            <td>180cm – 200cm</td>
+        </tr>
+        <tr>
+            <td>彈跳力</td>
+            <td>最高40公尺（背人減半為20公尺；抬重物無法跳躍）</td>
+        </tr>
+        <tr>
+            <td>奔跑速度</td>
+            <td>最高時速400公里（背人減半為200公里；抬重物無法奔跑）</td>
+        </tr>
+        <tr>
+            <td>單手力量</td>
+            <td>1公噸</td>
+        </tr>
+        <tr>
+            <td>雙手負重</td>
+            <td>可抬起大型車（無法抬卡車）</td>
+        </tr>
+        <tr>
+            <td>握力</td>
+            <td>500公斤</td>
+        </tr>
+        <tr>
+            <td>游泳速度</td>
+            <td>每小時240公里</td>
+        </tr>
+        <tr>
+            <td>人種</td>
+            <td>白人、黑人、黃種人</td>
+        </tr>
+        <tr>
+            <td>身材特徵</td>
+            <td>火爆身材，無胖子</td>
+        </tr>
+        </tbody>
+    </table>
+<br>
+    <!-- 人類 -->
+    <h2>人類數據</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+        <tr>
+            <th>項目</th>
+            <th>數據</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>女性身高</td>
+            <td>150cm – 180cm</td>
+        </tr>
+        <tr>
+            <td>男性身高</td>
+            <td>160cm – 190cm</td>
+        </tr>
+        <tr>
+            <td>體型特徵</td>
+            <td>有胖瘦差異</td>
+        </tr>
+        <tr>
+            <td>年齡分布</td>
+            <td>年輕人、中年人、老人（無兒童）</td>
+        </tr>
+        <tr>
+            <td>人種</td>
+            <td>白人、黑人、黃種人</td>
+        </tr>
+        <tr>
+            <td>戰鬥承受力</td>
+            <td>脆弱，可能被一腳踢斃</td>
+        </tr>
+        </tbody>
+    </table>
+<br>
+    <!-- 吸血鬼識別與族群比例 -->
+    <h2>識別方式與族群比例</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+        <tr>
+            <th>項目</th>
+            <th>說明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>吸血鬼識別</td>
+            <td>頭上有血條（人類沒有）</td>
+        </tr>
+        <tr>
+            <td>族群比例</td>
+            <td>吸血鬼為少數，人類為多數</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <h2>Lucía Muñoz（露西亞·穆尼奧茲）</h2>
+    <table style="border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 40px;">
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">角色定位</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">隊長</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">種族</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">吸血鬼</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">外貌</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">深棕色長髮、淺棕眼、麥色皮膚、精緻五官、火辣身材（D罩杯、馬甲線）</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">身高 / 體重</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">176 公分 / 64 公斤</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">能力</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">局部時間控制（方圓 50m 內時間減速 10 秒）</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">限制</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">每使用 4 次會頭暈、視力差，30 秒內機動力變為 1/4</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">樂器專長</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">小提琴</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">種族背景</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">Hispanic（拉丁裔）</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">感情對象</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">塞謬爾</td></tr>
+    </table>
+
+    <h2>Anaïs Bûcheron（安娜伊·比舍龍）</h2>
+    <table style="border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 40px;">
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">角色定位</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">女二號</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">種族</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">吸血鬼</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">外貌</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">金髮、藍眼、白皙皮膚、D罩杯、馬甲線</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">身高 / 體重</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">175 公分 / 63 公斤</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">能力</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">操控天氣（召喚雲層、下雨、召喚閃電）</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">限制</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">最多持續 1 分鐘、每次使用後需等待 2 分鐘</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">樂器專長</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">鍵盤敲擊樂器</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">種族背景</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">法裔美國人</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">感情對象</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">約克</td></tr>
+    </table>
+
+    <h2>中山由紀（Yuki Nakayama）</h2>
+    <table style="border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 40px;">
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">角色定位</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">女三號</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">種族</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">吸血鬼</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">外貌</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">黑短髮、深棕眼、白皙皮膚、D罩杯、馬甲線</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">身高 / 體重</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">173 公分 / 61 公斤</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">能力</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">操控溫度（方圓 50m 內加熱/冷卻）</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">限制</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">目標速度需 &lt;= 3m/s、使用 4 次後 30 秒疲勞期</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">樂器專長</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">古箏</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">種族背景</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">日裔美國人</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">感情對象</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">俊永</td></tr>
+    </table>
+
+    <h2>Samuel Jackson（塞謬爾·傑克遜）</h2>
+    <table style="border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 40px;">
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">角色定位</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">男一號</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">種族</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">吸血鬼</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">外貌</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">棕膚、黑眼、黑短髮、平頭、迷人肌肉</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">身高 / 體重</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">196 公分 / 94 公斤</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">能力</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">釋放麻痺白霧（方圓 50m 內麻痺 20 秒）</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">限制</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">每次持續 5 秒，冷卻時間 40 秒，無副作用</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">樂器專長</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">豎琴</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">種族背景</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">非裔美國人</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">感情對象</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">露西亞</td></tr>
+    </table>
+
+    <h2>Jörg Groß（約克·格羅斯）</h2>
+    <table style="border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 40px;">
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">角色定位</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">男二號</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">種族</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">吸血鬼</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">外貌</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">金髮、藍眼、白膚、精壯體格</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">身高 / 體重</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">195 公分 / 93 公斤</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">能力</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">腦波操控物體（隔空控物，可移動 100 噸）</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">限制</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">4次後疲勞期 30 秒，飛行速度慢（100km/h）</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">樂器專長</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">鋼琴</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">種族背景</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">德裔美國人</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">感情對象</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">安娜伊</td></tr>
+    </table>
+
+    <h2>金俊永（Kim Joon-young）</h2>
+    <table style="border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 40px;">
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">角色定位</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">男三號</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">種族</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">吸血鬼</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">外貌</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">黑髮、深棕眼、白膚、結實肌肉</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">身高 / 體重</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">193 公分 / 91 公斤</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">能力</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">1 分鐘隱形（NPC 無法看見，玩家視角可見）</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">限制</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">冷卻時間 2 分鐘，無副作用</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">樂器專長</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">吉他</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">種族背景</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">韓裔美國人</td></tr>
+        <tr><th style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">感情對象</th><td style="border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;">由紀</td></tr>
+    </table>
+
+
+    <h2>狼人的能力數據和背景設定：</h2>
+    <table border="1" cellspacing="0" cellpadding="6">
+        <thead>
+        <tr>
+            <th>項目</th>
+            <th>說明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>起源</td>
+            <td>由代號 Y 的外星病毒感染人類所產生。</td>
+        </tr>
+        <tr>
+            <td>變身條件</td>
+            <td>可隨時變身為狼人，保有理智。</td>
+        </tr>
+        <tr>
+            <td>任務定位</td>
+            <td>保護人類，打擊吸血鬼、野獸與罪犯（吸血鬼獵人）。</td>
+        </tr>
+        <tr>
+            <td>變身後外觀</td>
+            <td>狼頭人身，全身覆蓋狼毛，有狼爪與銳牙。</td>
+        </tr>
+        <tr>
+            <td>超能力</td>
+            <td>無，靠純粹的物理力量作戰。</td>
+        </tr>
+        <tr>
+            <td>感染後狀態</td>
+            <td>永生不老、失去生育能力；人形狀態時如普通人類。</td>
+        </tr>
+        <tr>
+            <td>生理需求</td>
+            <td>需吃、喝、排泄、睡眠；女性仍有生理期。</td>
+        </tr>
+        <tr>
+            <td>變身方式</td>
+            <td>由狼人咬人或注射病毒傳染。</td>
+        </tr>
+        <tr>
+            <td>雄性狼人（變身狀態）</td>
+            <td>
+                身高230cm，體重140kg，跳躍力200m，時速250km，單手力量8噸，握力2噸，咬合力16噸，游泳90km/h，肺活量常人4倍。
+            </td>
+        </tr>
+        <tr>
+            <td>雌性狼人（變身狀態）</td>
+            <td>
+                身高210cm，體重120kg，跳躍力100m，時速125km，單手力量4噸，握力1噸，咬合力8噸，游泳60km/h，肺活量常人4倍。
+            </td>
+        </tr>
+        <tr>
+            <td>壽命影響</td>
+            <td>感染後停止老化，外貌與年齡永遠停留在感染時。</td>
+        </tr>
+        <tr>
+            <td>與吸血鬼比較</td>
+            <td>力量與彈跳力高於吸血鬼，速度與技能低於吸血鬼。</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2>創始者家族的吸血鬼角色：</h2>
+    <table style="width: 100%;
+           border-collapse: collapse;">
+        <caption style="font-size: 24px;
+            margin-bottom: 10px;">創始者家族角色</caption>
+        <thead>
+        <tr>
+            <th style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">角色</th>
+            <th style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">能力</th>
+            <th style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">出生地點</th>
+            <th style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">服裝描述</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">索菲亞</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">改變自身密度，飛行或增加力量</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">公元前1000年，希臘</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">雅典娜女神的白色服飾，金色頭冠和護甲</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">徐福</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">讓方圓50米的活物感到極度痛苦，扣血</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">公元前2世紀，中國</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">秦朝官服，露出半個上半身</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">赫爾薇爾</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">製造蟲洞轉移攻擊</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">公元800年，斯堪地納維亞</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">維京時代的棕色戰甲，露肩和胸部</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">摩耶陀羅</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">時間倒退，復活同伴或損毀物品</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">公元前600年，印度</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">印度公主服飾，紅色珠寶，黃色玉環</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">埃米爾</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">操控活物與電子產品的意識</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">公元600年，阿拉伯</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">阿拉丁風格的肚兜和中東頭冠</td>
+        </tr>
+        </tbody>
+    </table>
+<br>
+    <h2>創始者家族的背景</h2>
+    <p>創始者家族擁有超過一千年的歷史，並以吸血鬼社會的統治者身份存在。每位成員都具備強大的能力，並在不同的情況下扮演主角的盟友或對立角色。</p>
+    <p>他們的總部位於神秘五十一區地下，分為兩層：第一層是與隨從互動的地方；第二層則是血池，專門關押被眷養的人類。</p>
+
+    <h2>角色能力詳細</h2>
+    <table style="width: 100%;
+            border-collapse: collapse;">
+        <caption style="font-size: 24px;
+            margin-bottom: 10px;">角色能力詳情</caption>
+        <thead>
+        <tr>
+            <th style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">角色</th>
+            <th style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">超能力描述</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">索菲亞</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">透過改變密度，變得透明可飛行，或重達四十倍增加抗打能力。</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">徐福</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">讓範圍內的活物感受到極度痛苦，扣血，並且造成即死效果。</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">赫爾薇爾</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">製造蟲洞轉移攻擊，避開來自敵人的攻擊。</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">摩耶陀羅</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">讓特定範圍內的時間倒退，恢復同伴和物品。</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">埃米爾</td>
+            <td style="padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;">入侵並操控活物和電子產品的意識，造成混亂。</td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="content">
+        <h2>遊戲背景大意</h2>
+        <p>為了讓愛狗、愛貓人士以及家長群體在遊戲過程中不感到不適，遊戲世界中沒有貓和狗，也沒有小孩、學生等角色。取而代之的是吸血鬼文化相關元素，如吸血鬼酒吧和地下血庫交易所。</p>
+        <p>遊戲中的動物如美洲野牛、黑熊、山獅等，也成為吸血鬼的獵物。這些動物會出現在離拉斯維加斯市區較遠的地方，如 Red Rock Canyon 等。</p>
+
+        <h2>可作為獵物的動物</h2>
+        <ul>
+            <li>美洲野牛</li>
+            <li>美洲黑熊</li>
+            <li>美洲山獅</li>
+            <li>Mule Deer（鹿）</li>
+            <li>大角羊</li>
+            <li>野馬</li>
+            <li>科羅拉多大蜥（Gila Monster）</li>
+            <li>沙漠龜（Desert Tortoise）</li>
+            <li>駝鹿（Elk）</li>
+        </ul>
+
+        <h2>吸血和處死獵物的方式</h2>
+        <p>玩家的吸血鬼角色會露出獠牙，開始吸血，直到獵物的血被吸乾為止。若血量在吸取過程中回復至100%，則會跳出選擇讓玩家決定如何處死獵物。處死方式包括：</p>
+        <ul>
+            <li>斬首</li>
+            <li>剖肚</li>
+            <li>爆頭</li>
+            <li>肢解</li>
+        </ul>
+        <p>玩家也可以利用吸血鬼的特殊能力來達成上述效果。</p>
+    </div>
+    <div class="content">
+        <h2>遊戲設計大意</h2>
+        <p>遊戲設計注重現實感，與一些開放世界遊戲的自由度有所不同。以下是遊戲的主要設計邏輯：</p>
+
+        <table style="width: 100%;
+               border-collapse: collapse;
+               margin-top: 20px;border: 1px solid #444;">
+            <thead>
+            <tr>
+                <th style="padding: 10px;
+            text-align: left;border: 1px solid #444;">設計項目</th>
+                <th style="padding: 10px;
+                    text-align: left;border: 1px solid #444;">具體描述</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="padding: 10px;
+                    text-align: left;border: 1px solid #444;">武器使用限制</td>
+                <td style="padding: 10px;
+                    text-align: left;border: 1px solid #444;">玩家無法隨時切換武器，必須事先從倉庫選擇好武器或是從 NPC 那裡搶奪或購買。</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;
+                    text-align: left;border: 1px solid #444;">交通工具使用限制</td>
+                <td style="padding: 10px;
+                    text-align: left;border: 1px solid #444;">玩家無法隨時召喚交通工具，必須攔下正在行駛中的車輛才能偷走。</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;
+                    text-align: left;border: 1px solid #444;">車輛損壞設計</td>
+                <td style="padding: 10px;
+                    text-align: left;border: 1px solid #444;">當吸血鬼攻擊車輛時，車輛會受損且可能掉落零件，而不僅僅是扣血。</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;
+                    text-align: left;border: 1px solid #444;">路人殺害金錢投影</td>
+                <td style="padding: 10px;
+                    text-align: left;border: 1px solid #444;">殺害路人後會顯示金錢投影，玩家接觸投影即可賺取金錢，而無需搜查屍體。</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;
+                    text-align: left;border: 1px solid #444;">物品偷竊與交易</td>
+                <td style="padding: 10px;
+                    text-align: left;border: 1px solid #444;">玩家可以偷來的武器和交通工具帶回家，也可以送到地下交易市場賣掉賺取金錢。</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

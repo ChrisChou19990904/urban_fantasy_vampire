@@ -1,5 +1,5 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "urban_fantasy_vampire",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
