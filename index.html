@@ -45,7 +45,9 @@
 </p>
 <p>🌍<strong> 六位主角自小相識，父母來自歐洲、亞洲、非洲與拉丁美洲等地，體現美國多元文化</strong><br>
     🧑‍🤝‍🧑<strong> 遊戲中所有人類與吸血鬼角色皆以現實人類外貌建模，提升真實感與玩家共鳴</strong><br>
-    🌆<strong> 現實世界時間與天氣同步，帶來沉浸式體驗</strong><br>
+    🌆<strong> 遊戲內一天的時間為三十分鐘，AM和PM各佔十五分鐘，以便讓玩家有效率地體驗個時間點的情況</strong><br>
+    ⏲️<strong>會有兩個時鐘分別顯示現實世界的時間和遊戲內的時間，其中呈現現實世界的是數字時鐘（Digital CLock），而呈現遊戲的是指針時鐘（Analog Clock），好讓玩家容易區分</strong><br>
+    🧛🏻<strong>每個可使用的吸血鬼都有自己的特殊技能，且技能持續時間和冷卻時間皆為現實中的流速</strong>
     🧬<strong> 科幻與吸血鬼傳說融合的全新世界觀</strong><br>
     ⚔️<strong> 實時戰鬥＋社交選擇系統，命運由你掌握</strong><br>
     🔥<strong> 六位角色，每人都有獨立劇情與能力成長路線</strong>
@@ -136,7 +138,7 @@
         </tr>
         <tr>
             <td>飛行能力</td>
-            <td>無法飛行，依靠地面行動。</td>
+            <td>無法飛行，依靠地面行動。（少部分吸血鬼可以透過自己的特殊能力讓自己飛起來，例如念力、改變密度等）</td>
         </tr>
         <tr>
             <td>特殊能力</td>
@@ -356,7 +358,7 @@
       padding: 8px 12px;
       text-align: left;">能力</th><td style="border: 1px solid black;
       padding: 8px 12px;
-      text-align: left;">局部時間控制（方圓50m內時間暫停持續十秒）</td></tr>
+      text-align: left;">局部時間控制（方圓50m內時間暫停持續十秒，這邊的十秒指的是現實中的時間流速）</td></tr>
         <tr><th style="border: 1px solid black;
       padding: 8px 12px;
       text-align: left;">限制</th><td style="border: 1px solid black;
@@ -410,12 +412,12 @@
       padding: 8px 12px;
       text-align: left;">能力</th><td style="border: 1px solid black;
       padding: 8px 12px;
-      text-align: left;">操控天氣（召喚雲層、下雨、召喚閃電），可靠這招抵擋紫外線以及用閃電攻擊敵人，但是在室內無法使用此技能</td></tr>
+      text-align: left;">操控天氣（召喚雲層、下雨、召喚閃電），讓方圓一百公尺內被烏雲壟罩，且她移動到哪烏雲就會跟著到哪，可靠這招抵擋紫外線以及用閃電攻擊敵人</td></tr>
         <tr><th style="border: 1px solid black;
       padding: 8px 12px;
       text-align: left;">限制</th><td style="border: 1px solid black;
       padding: 8px 12px;
-      text-align: left;">最多持續 1 分鐘、每次使用後需等待2分鐘，但這二分鐘不會有疲勞期</td></tr>
+      text-align: left;">持續一分鐘，且這一分鐘內可無限召喚閃電，但每次最多只能召喚三串閃電，也就是最多只能同時攻擊三人。每次使用後需等待二分鐘，但這二分鐘不會有疲勞期。另外，在室內無法使用此技能</td></tr>
         <tr><th style="border: 1px solid black;
       padding: 8px 12px;
       text-align: left;">樂器專長</th><td style="border: 1px solid black;
@@ -465,12 +467,12 @@
       padding: 8px 12px;
       text-align: left;">能力</th><td style="border: 1px solid #999;
       padding: 8px 12px;
-      text-align: left;">操控溫度（方圓 50m 內加熱/冷卻），可以讓敵人著火或結成冰</td></tr>
+      text-align: left;">操控溫度（方圓 50m 內加熱/冷卻），可以選擇讓敵人著火或結成冰</td></tr>
         <tr><th style="border: 1px solid black;
       padding: 8px 12px;
       text-align: left;">限制</th><td style="border: 1px solid black;
       padding: 8px 12px;
-      text-align: left;">目標速度需 &lt;= 3m/s、使用四次後冷卻時間與疲勞期持續三十秒</td></tr>
+      text-align: left;">一次最多能針對五個目標且目標速度需小於每秒三米、使用四次後冷卻時間與疲勞期持續三十秒</td></tr>
         <tr><th style="border: 1px solid black;
       padding: 8px 12px;
       text-align: left;">樂器專長</th><td style="border: 1px solid black;
@@ -520,7 +522,7 @@
       padding: 8px 12px;
       text-align: left;">能力</th><td style="border: 1px solid black;
       padding: 8px 12px;
-      text-align: left;">釋放麻痺白霧（方圓 50m 內麻痺 20 秒），這招可讓交通工具暫時熄火並按照慣性前進以及讓人暫時失去活動能力而倒下來，卻不會讓人失去視力</td></tr>
+      text-align: left;">釋放麻痺白霧（方圓 50m 內所有物體麻痺20秒），這招可讓交通工具暫時熄火並按照慣性前進以及讓人暫時失去活動能力而倒下來，卻不會讓人失去視力</td></tr>
         <tr><th style="border: 1px solid black;
       padding: 8px 12px;
       text-align: left;">限制</th><td style="border: 1px solid black;
@@ -575,12 +577,12 @@
       padding: 8px 12px;
       text-align: left;">能力</th><td style="border: 1px solid black;
       padding: 8px 12px;
-      text-align: left;">腦波操控物體（隔空控物，但只能移動一噸重以內的物體且最遠距離是十米），也可靠這招讓自己飛起來但是速度只有時速一百公里且在揹著等身重物的情況下飛行速度只有時速五十公里</td></tr>
+      text-align: left;">腦波操控物體（當他施展這項能力時系統會問要對自己使用還是他人使用。如果是對他人使用，方圓五十公尺內的活物與交通工具會出現框框且系統會問玩家要對哪些對象使用且確認要對哪些對象使用後，系統又會跳出要做甚麼招式。如果只有一個對象，那麼選項會跳出要把它吸過來且沿著水平線飛行，還是讓它原地垂直起飛，還是讓它以拋物線的方式被帶往哪個方向飛走且還能調整方向與投射角度與力道。如果是二個對象，選項會跳出要把它吸過來且沿著水平線飛行，還是讓它們兩個在原地垂直起飛還是讓它們以拋物線的方式進行相向運動（也就是讓它們撞在一起）。如果是三個對象或三個對象以上，選項就只有原地垂直起飛這個選項。如果使用原地垂直起飛這個選項，系統又會跳出要是要用瞬間的力道將對象往上拉且能設定力道大小，還是慢慢往上拉但要先設定好高度，但後者只適用於移動速度為每秒三公尺以內的對象，而前者則適用於所有狀態中的對象且對象被這招用到時會受到原本的慣性影響而以拋物線的方式在空中移動。如果是對自己使用，那就是讓自己懸浮在空中並飛來飛去，但飛行速度最快是一百公里，且在漂浮的情況下不能對任何東西使用隔空取物的技能，不過一樣可以靠拳打腳踢這種普通攻擊對抗敵人，但是在漂浮情況下揹起身重物時飛行速度會減半也就是時速五十公里，而抬起更重的物品則無法飛行。</td></tr>
         <tr><th style="border: 1px solid black;
       padding: 8px 12px;
       text-align: left;">限制</th><td style="border: 1px solid black;
       padding: 8px 12px;
-      text-align: left;">4次後冷卻期與疲勞期持續30秒</td></tr>
+      text-align: left;">最多只能挪動一噸重以內的物體，所以無法對飛在空中但超過一噸重的飛行器使用這招，且使用這招四次後冷卻期與疲勞期持續30秒</td></tr>
         <tr><th style="border: 1px solid black;
       padding: 8px 12px;
       text-align: left;">樂器專長</th><td style="border: 1px solid black;
@@ -756,7 +758,7 @@
             <tbody>
             <tr>
                 <td>體力</td>
-                <td>玩家登入後即開始下降，約1小時會耗盡。使用超能力或奔跑不影響消耗速度。</td>
+                <td>玩家登入後即開始下降，約半小時會耗盡。使用超能力或奔跑不影響消耗速度。</td>
             </tr>
             <tr>
                 <td>休息提醒</td>
@@ -1071,10 +1073,10 @@
             border: 1px solid black;">Sophia</td>
             <td style="padding: 8px;
             text-align: center;
-            border: 1px solid black;">改變自身的密度與分子——透過變輕讓自己飄起來甚至穿越物體，飛行速度可達時速九百公里並免疫紫外線和銀製品；透過變重讓自己力氣大到可以舉起坦克車以及免疫飛彈等殺傷力極強的武器的傷害，但是跳躍力與奔跑速度也會有所下降且一樣會被紫外線和銀製品傷害</td>
+            border: 1px solid black;">暫時改變自身的密度與分子一分鐘——透過變輕讓自己飄起來甚至穿越物體，可免疫紫外線和銀製品，但飛行速度最多只有一百公里；透過變重讓自己力氣大到可以舉起坦克車以及免疫飛彈等殺傷力極強的武器的傷害，但是跳躍力與奔跑速度也會有所下降且一樣會被紫外線和銀製品傷害。</td>
             <td style="padding: 8px;
             text-align: center;
-            border: 1px solid black;">冷卻時間為一分鐘，但無疲勞期</td>
+            border: 1px solid black;">最多可持續一分鐘，且這一分鐘內可隨時恢復原狀，但超過十秒才恢復原狀會進入冷卻期。冷卻時間為一分鐘，但無疲勞期</td>
         </tr>
         <tr>
             <td style="padding: 8px;
@@ -1082,10 +1084,10 @@
             border: 1px solid black;">Māyādharā</td>
             <td style="padding: 8px;
             text-align: center;
-            border: 1px solid black;">讓全世界的時間倒退一分鐘，這招可以復活同伴和損毀的交通工具、武器，但副作用是讓敵人也復活以及讓賺來的錢流失</td>
+            border: 1px solid black;">讓全世界的時間倒退一分鐘（現實中的流速），這招可以復活同伴和損毀的交通工具、武器，但副作用是讓敵人也復活以及讓賺來的錢流失</td>
             <td style="padding: 8px;
             text-align: center;
-            border: 1px solid black;">使用三次後冷卻時間與疲勞期持續一分鐘</td>
+            border: 1px solid black;">使用三次後冷卻時間與疲勞期持續二分鐘</td>
         </tr>
         <tr>
             <td style="padding: 8px;
@@ -1140,7 +1142,7 @@
             border: 1px solid black;">讓方圓五十米內的所有人暫時失明四十秒鐘</td>
             <td style="padding: 8px;
             text-align: center;
-            border: 1px solid black;">冷卻期為一分鐘二十秒，但沒有疲勞期。</td>
+            border: 1px solid black;">使用四次後出現疲勞期三十秒</td>
         </tr>
         </tbody>
     </table>
