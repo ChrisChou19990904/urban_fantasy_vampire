@@ -47,7 +47,7 @@
     🧑‍🤝‍🧑<strong> 遊戲中所有人類與吸血鬼角色皆以現實人類外貌建模，提升真實感與玩家共鳴</strong><br>
     🌆<strong> 遊戲內一天的時間為三十分鐘，AM和PM各佔十五分鐘，以便讓玩家有效率地體驗個時間點的情況</strong><br>
     ⏲️<strong>會有兩個時鐘分別顯示現實世界的時間和遊戲內的時間，其中呈現現實世界的是數字時鐘（Digital CLock），而呈現遊戲的是指針時鐘（Analog Clock），好讓玩家容易區分</strong><br>
-    🧛🏻<strong>每個可使用的吸血鬼都有自己的特殊技能，且技能持續時間和冷卻時間皆為現實中的流速</strong>
+    🧛🏻<strong>每個可使用的吸血鬼都有自己的特殊技能，且技能持續時間和冷卻時間皆為現實中的流速</strong><br>
     🧬<strong> 科幻與吸血鬼傳說融合的全新世界觀</strong><br>
     ⚔️<strong> 實時戰鬥＋社交選擇系統，命運由你掌握</strong><br>
     🔥<strong> 六位角色，每人都有獨立劇情與能力成長路線</strong>
@@ -577,12 +577,58 @@
       padding: 8px 12px;
       text-align: left;">能力</th><td style="border: 1px solid black;
       padding: 8px 12px;
-      text-align: left;">腦波操控物體（當他施展這項能力時系統會問要對自己使用還是他人使用。如果是對他人使用，方圓五十公尺內的活物與交通工具會出現框框且系統會問玩家要對哪些對象使用且確認要對哪些對象使用後，系統又會跳出要做甚麼招式。如果只有一個對象，那麼選項會跳出要把它吸過來且沿著水平線飛行，還是讓它原地垂直起飛，還是讓它以拋物線的方式被帶往哪個方向飛走且還能調整方向與投射角度與力道。如果是二個對象，選項會跳出要把它吸過來且沿著水平線飛行，還是讓它們兩個在原地垂直起飛還是讓它們以拋物線的方式進行相向運動（也就是讓它們撞在一起）。如果是三個對象或三個對象以上，選項就只有原地垂直起飛這個選項。如果使用原地垂直起飛這個選項，系統又會跳出要是要用瞬間的力道將對象往上拉且能設定力道大小，還是慢慢往上拉但要先設定好高度，但後者只適用於移動速度為每秒三公尺以內的對象，而前者則適用於所有狀態中的對象且對象被這招用到時會受到原本的慣性影響而以拋物線的方式在空中移動。如果是對自己使用，那就是讓自己懸浮在空中並飛來飛去，但飛行速度最快是一百公里，且在漂浮的情況下不能對任何東西使用隔空取物的技能，不過一樣可以靠拳打腳踢這種普通攻擊對抗敵人，但是在漂浮情況下揹起身重物時飛行速度會減半也就是時速五十公里，而抬起更重的物品則無法飛行。</td></tr>
+      text-align: left;"><h2 style="text-align: center;">腦波操控物體</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+            <tr>
+                <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">使用對象</th>
+                <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">可選動作</th>
+                <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">補充說明</th>
+            </tr>
+            </thead>
+            <tbody style="background-color: white;">
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">對他人使用</td>
+                <td style="border: 1px solid black; padding: 8px;">選擇對象（50公尺範圍內）</td>
+                <td style="border: 1px solid black; padding: 8px;">動態物體顯示框框，選擇操作對象</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">單個對象</td>
+                <td style="border: 1px solid black; padding: 8px;">吸過來、水平飛行、垂直起飛、拋物線飛行</td>
+                <td style="border: 1px solid black; padding: 8px;">可調整飛行角度與力道</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">兩個對象</td>
+                <td style="border: 1px solid black; padding: 8px;">吸過來、兩者垂直起飛、相向運動（撞擊）</td>
+                <td style="border: 1px solid black; padding: 8px;">兩個物體會相撞</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">三個以上對象</td>
+                <td style="border: 1px solid black; padding: 8px;">垂直起飛</td>
+                <td style="border: 1px solid black; padding: 8px;">僅能選擇垂直起飛</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">垂直起飛選項</td>
+                <td style="border: 1px solid black; padding: 8px;">瞬間拉力或慢慢拉升</td>
+                <td style="border: 1px solid black; padding: 8px;">瞬間拉力適用於所有物體；慢拉適用於每秒3公尺以下物體</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">對自己使用</td>
+                <td style="border: 1px solid black; padding: 8px;">懸浮飛行</td>
+                <td style="border: 1px solid black; padding: 8px;">最快時速100公里，無法使用隔空取物技能，但可進行普通攻擊</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">攜帶重物</td>
+                <td style="border: 1px solid black; padding: 8px;">減速飛行</td>
+                <td style="border: 1px solid black; padding: 8px;">若攜帶重物，速度降至50公里每小時；過重物品無法飛行</td>
+            </tr>
+            </tbody>
+        </table></td></tr>
         <tr><th style="border: 1px solid black;
       padding: 8px 12px;
       text-align: left;">限制</th><td style="border: 1px solid black;
       padding: 8px 12px;
-      text-align: left;">最多只能挪動一噸重以內的物體，所以無法對飛在空中但超過一噸重的飛行器使用這招，且使用這招四次後冷卻期與疲勞期持續30秒</td></tr>
+      text-align: left;">最多只能挪動一噸重以內的物體，所以無法對超過一噸重的交通工具使用這招，且使用這招四次後冷卻期與疲勞期持續30秒</td></tr>
         <tr><th style="border: 1px solid black;
       padding: 8px 12px;
       text-align: left;">樂器專長</th><td style="border: 1px solid black;
