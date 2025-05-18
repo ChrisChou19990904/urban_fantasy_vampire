@@ -5,6 +5,9 @@
     <title>夜行者之城</title>
 </head>
 <style>
+    html {
+        scroll-behavior: smooth; /* 平滑滾動效果 */
+    }
     ul {
         list-style-type: square;
     }
@@ -365,13 +368,13 @@
                 <li>持續時間：10秒鐘</li>
                 <li>雷射光、子彈在時間控制範圍內，移動速度為每秒3公尺</li>
                 <li>此功能可讓目標輕易閃躲以下物體或攻擊：
-                    <ul>
+                    <ol>
                         <li>砲彈</li>
                         <li>車輛</li>
                         <li>飛彈</li>
                         <li>墜毀的飛機</li>
                         <li>來自敵人的能量攻擊（如雷射、電弧等）</li>
-                    </ul>
+                    </ol>
                 </li>
             </ul></td></tr>
         <tr><th style="border: 1px solid black;
@@ -444,21 +447,19 @@
       text-align: left;"><ul>
             <li><strong>能力描述：</strong> 可持續一分鐘，並能無限召喚閃電。</li>
             <li><strong>召喚限制：</strong>
-                <ul>
+                <ol>
                     <li>每次最多只能召喚三串閃電。</li>
                     <li>每次使用最多只能同時攻擊三人。</li>
-                </ul>
+                </ol>
             </li>
             <li><strong>冷卻時間：</strong>
-                <ul>
+                <ol>
                     <li>每次使用後需等待二分鐘才能再次使用。</li>
                     <li>這二分鐘內不會有疲勞期。</li>
-                </ul>
+                </ol>
             </li>
-            <li><strong>使用限制：</strong>
-                <ul>
-                    <li>在室內無法使用此技能。</li>
-                </ul>
+            <li><strong>使用限制：</strong><br>
+                在室內無法使用此技能
             </li>
         </ul></td></tr>
         <tr><th style="border: 1px solid black;
@@ -514,30 +515,30 @@
             <ul>
                 <li>範圍：方圓50米內的所有物體</li>
                 <li>使用時，目標會出現瞄準框，並詢問玩家：
-                    <ul>
+                    <ol>
                         <li>哪些目標需要高溫</li>
                         <li>哪些目標需要低溫</li>
-                    </ul>
+                    </ol>
                 </li>
                 <li>效果：控制目標的溫度，可以：
-                    <ul>
+                    <ol>
                         <li>使敵人無緣無故燒起來或凍住</li>
                         <li>使交通工具燃燒並爆炸或凍住並故障</li>
-                    </ul>
+                    </ol>
                 </li>
                 <li>生效時間：需要三秒鐘後才會有效果</li>
                 <li>限制：
-                    <ul>
+                    <ol>
                         <li>目標移動速度必須在每秒三公尺以內才有效</li>
                         <li>無法對行駛中的交通工具和奔跑中的活物使用</li>
-                    </ul>
+                    </ol>
                 </li>
                 <li>使用場所：可以在室外或室內使用</li>
                 <li>應用範圍：
-                    <ul>
+                    <ol>
                         <li>凍結湖面</li>
                         <li>融化冰川</li>
-                    </ul>
+                    </ol>
                 </li>
             </ul></td></tr>
         <tr><th style="border: 1px solid black;
@@ -897,7 +898,7 @@
                         <li>等待倒數結束，由系統自動扣錢進行復活</li>
                     </ol>
                 </li>
-                <li>此機制是為了搭配某位擁有「逆轉時間」能力的吸血鬼角色設計。</li>
+                <li>此機制是為了搭配某位擁有<a href="#vampire-skill">「逆轉時間」能力的吸血鬼角色</a>設計（往下滑才會看到關於她的詳細介紹）</li>
             </ul></td>
         </tr>
         </tbody>
@@ -1250,7 +1251,7 @@
             text-align: center;
             border: 1px solid black;">最多可持續一分鐘，且這一分鐘內可隨時恢復原狀，但超過十秒才恢復原狀會進入冷卻期。冷卻時間為一分鐘，但無疲勞期</td>
         </tr>
-        <tr>
+        <tr id="vampire-skill">
             <td style="padding: 8px;
             text-align: center;
             border: 1px solid black;">Māyādharā</td>
